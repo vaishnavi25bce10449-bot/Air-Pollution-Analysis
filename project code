@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-print("⚙️ Creating Dummy Dataset...")
+print("⚙ Creating Dummy Dataset...")
 # Create a date range for the index
 dates = pd.date_range('2023-01-01', periods=365, freq='D')
 
