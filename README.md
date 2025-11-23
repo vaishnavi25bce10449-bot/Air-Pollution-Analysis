@@ -1,4 +1,4 @@
-Air Quality Analysis Model
+💨 Air Quality Analysis Model
 Table of Contents
 1. Introduction
 2. Features
