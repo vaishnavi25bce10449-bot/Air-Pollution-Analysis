@@ -1,4 +1,4 @@
-Air Quality Analysis Model 
+## Air Quality Analysis Model 
 Table of Contents 
 1.  Introduction 
 2.  Features 
@@ -8,14 +8,14 @@ Table of Contents
 6.  Dependencies 
 7.  Contributing 
 8.  License 
-1. Introduction 
+## 1. Introduction 
 This repository hosts a Python-based model designed for analyzing and visualizing air quality 
 data. The model is built using common data science libraries, providing tools for data 
 cleaning, exploratory data analysis (EDA), time-series forecasting of pollutants (e.g., PM2.5, 
 NO2, O3), and source apportionment insights. 
 The primary goal is to provide a reliable, easily reproducible framework for understanding air 
 pollution trends and predicting future air quality index (AQI) values. 
-2. Features 
+## 2. Features 
 ●  Data Ingestion:  Supports loading time-series air quality  data from CSV or JSON files. 
 ●  Data Preprocessing:  Handles missing values, performs  data normalization, and 
 resamples time-series data to standard intervals (e.g., hourly, daily). 
@@ -31,10 +31,10 @@ Getty Images
 ●  Visualization:  Produces interactive and static visualizations  using Matplotlib and 
 Seaborn/Plotly. 
 ●  Report Generation:  Capability to generate a summary  report of the analysis findings. 
-3. Installation 
+## 3. Installation 
 Prerequisites 
 You need Python 3.8+ installed on your system. 
-Steps 
+## Steps 
 1.  Clone the repository: 
 git clone 
 [https://github.com/yourusername/air-quality-analysis.git](https://github.com/youruserna 
