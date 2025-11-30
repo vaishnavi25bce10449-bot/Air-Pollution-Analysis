@@ -1,4 +1,4 @@
-# 🌬️ Air Pollution Data Analysis Project
+# Air Pollution Data Analysis Project
 
 ## Overview
 This project focuses on analyzing and visualizing air quality data, primarily focusing on key pollutants like **PM2.5** and **AQI (Air Quality Index)** in **[Specify Region/City]**. 
