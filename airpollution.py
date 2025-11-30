@@ -1,4 +1,5 @@
 import kagglehub
+import os # Import the os module for path manipulation
 path = kagglehub.dataset_download("kunshbhatia/delhi-air-quality-dataset")
 print("Path to dataset files:", path)
 import pandas as pd
@@ -8,7 +9,8 @@ import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression, Ridge, Lasso
 from sklearn.metrics import mean_squared_error, r2_score
-df = pd.read_csv("/kaggle/input/delhi-air-quality-dataset/final_dataset.csv")
+# Construct the full path to the CSV file using the downloaded path
+df = pd.read_csv(os.path.join(path, "final_dataset.csv"))
 df.head()
 df.tail()
 df.shape
@@ -34,10 +36,11 @@ for name, model in models.items():
     pred = model.predict(X_test)
     print(name)
     print("R2 Score:", r2_score(y_test, pred))
-    print("RMSE:", mean_squared_error(y_test, pred, squared=False))
+    # Calculate RMSE by taking the square root of MSE
+    print("RMSE:", np.sqrt(mean_squared_error(y_test, pred)))
     print("-"*40)
-  plt.figure(figsize=(8,6))
-plt.scatter(y_test, lr.predict(X_test)) 
+plt.figure(figsize=(8,6))
+plt.scatter(y_test, lr.predict(X_test))
 plt.xlabel("Actual AQI")
 plt.ylabel("Predicted AQI")
 plt.title("Actual vs Predicted AQI (Linear Regression)")
